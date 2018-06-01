@@ -30,6 +30,21 @@
 #include <memory>
 #include <map>
 
+#include <windows.h>
+
+void usleep(__int64 usec)
+{
+  HANDLE timer;
+  LARGE_INTEGER ft;
+
+  ft.QuadPart = -(10 * usec); // Convert to 100 nanosecond interval, negative value indicates relative time
+
+  timer = CreateWaitableTimer(NULL, TRUE, NULL);
+  SetWaitableTimer(timer, &ft, 0, NULL, NULL, 0);
+  WaitForSingleObject(timer, INFINITE);
+  CloseHandle(timer);
+}
+
 #if defined(__unix__) || defined(__unix) || (defined(__APPLE__) && defined(__MACH__))
 # define INFILTER_PIPE  // Allow pipe filtering.  Needs fork()
 #endif

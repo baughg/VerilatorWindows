@@ -34,7 +34,7 @@
 #include "verilatedos.h"
 #include <cstdio>
 #include <cstdarg>
-#include <unistd.h>
+#include <process.h> //#include <unistd.h>
 #include <map>
 #include <algorithm>
 #include <vector>

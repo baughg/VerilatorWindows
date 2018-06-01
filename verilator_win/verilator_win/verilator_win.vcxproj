@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D5850B14-FD82-4D4E-9228-2B4332D37293}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>verilator_win</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>YYDEBUG;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Movidius\development\verilator\include;C:\Movidius\development\winflexbison\bin\Release</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>YYDEBUG;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Movidius\development\verilator\include;C:\Movidius\development\winflexbison\bin\Release</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\config_build.h" />
+    <ClInclude Include="..\..\src\V3Active.h" />
+    <ClInclude Include="..\..\src\V3ActiveTop.h" />
+    <ClInclude Include="..\..\src\V3Assert.h" />
+    <ClInclude Include="..\..\src\V3AssertPre.h" />
+    <ClInclude Include="..\..\src\V3Ast.h" />
+    <ClInclude Include="..\..\src\V3AstConstOnly.h" />
+    <ClInclude Include="..\..\src\V3AstNodes.h" />
+    <ClInclude Include="..\..\src\V3Begin.h" />
+    <ClInclude Include="..\..\src\V3Branch.h" />
+    <ClInclude Include="..\..\src\V3Broken.h" />
+    <ClInclude Include="..\..\src\V3Case.h" />
+    <ClInclude Include="..\..\src\V3Cast.h" />
+    <ClInclude Include="..\..\src\V3CCtors.h" />
+    <ClInclude Include="..\..\src\V3Cdc.h" />
+    <ClInclude Include="..\..\src\V3Changed.h" />
+    <ClInclude Include="..\..\src\V3Clean.h" />
+    <ClInclude Include="..\..\src\V3ClkGater.h" />
+    <ClInclude Include="..\..\src\V3Clock.h" />
+    <ClInclude Include="..\..\src\V3Combine.h" />
+    <ClInclude Include="..\..\src\V3Config.h" />
+    <ClInclude Include="..\..\src\V3Const.h" />
+    <ClInclude Include="..\..\src\V3Coverage.h" />
+    <ClInclude Include="..\..\src\V3CoverageJoin.h" />
+    <ClInclude Include="..\..\src\V3Dead.h" />
+    <ClInclude Include="..\..\src\V3Delayed.h" />
+    <ClInclude Include="..\..\src\V3Depth.h" />
+    <ClInclude Include="..\..\src\V3DepthBlock.h" />
+    <ClInclude Include="..\..\src\V3Descope.h" />
+    <ClInclude Include="..\..\src\V3EmitC.h" />
+    <ClInclude Include="..\..\src\V3EmitCBase.h" />
+    <ClInclude Include="..\..\src\V3EmitMk.h" />
+    <ClInclude Include="..\..\src\V3EmitV.h" />
+    <ClInclude Include="..\..\src\V3EmitXml.h" />
+    <ClInclude Include="..\..\src\V3Error.h" />
+    <ClInclude Include="..\..\src\V3Expand.h" />
+    <ClInclude Include="..\..\src\V3File.h" />
+    <ClInclude Include="..\..\src\V3FileLine.h" />
+    <ClInclude Include="..\..\src\V3Gate.h" />
+    <ClInclude Include="..\..\src\V3GenClk.h" />
+    <ClInclude Include="..\..\src\V3Global.h" />
+    <ClInclude Include="..\..\src\V3Graph.h" />
+    <ClInclude Include="..\..\src\V3GraphAlg.h" />
+    <ClInclude Include="..\..\src\V3GraphDfa.h" />
+    <ClInclude Include="..\..\src\V3Hashed.h" />
+    <ClInclude Include="..\..\src\V3Inline.h" />
+    <ClInclude Include="..\..\src\V3Inst.h" />
+    <ClInclude Include="..\..\src\V3LangCode.h" />
+    <ClInclude Include="..\..\src\V3LanguageWords.h" />
+    <ClInclude Include="..\..\src\V3Life.h" />
+    <ClInclude Include="..\..\src\V3LifePost.h" />
+    <ClInclude Include="..\..\src\V3LinkCells.h" />
+    <ClInclude Include="..\..\src\V3LinkDot.h" />
+    <ClInclude Include="..\..\src\V3LinkJump.h" />
+    <ClInclude Include="..\..\src\V3LinkLevel.h" />
+    <ClInclude Include="..\..\src\V3LinkLValue.h" />
+    <ClInclude Include="..\..\src\V3LinkParse.h" />
+    <ClInclude Include="..\..\src\V3LinkResolve.h" />
+    <ClInclude Include="..\..\src\V3List.h" />
+    <ClInclude Include="..\..\src\V3Localize.h" />
+    <ClInclude Include="..\..\src\V3Name.h" />
+    <ClInclude Include="..\..\src\V3Number.h" />
+    <ClInclude Include="..\..\src\V3Options.h" />
+    <ClInclude Include="..\..\src\V3Order.h" />
+    <ClInclude Include="..\..\src\V3OrderGraph.h" />
+    <ClInclude Include="..\..\src\V3Os.h" />
+    <ClInclude Include="..\..\src\V3Param.h" />
+    <ClInclude Include="..\..\src\V3Parse.h" />
+    <ClInclude Include="..\..\src\V3ParseImp.h" />
+    <ClInclude Include="..\..\src\V3ParseSym.h" />
+    <ClInclude Include="..\..\src\V3PreLex.h" />
+    <ClInclude Include="..\..\src\V3Premit.h" />
+    <ClInclude Include="..\..\src\V3PreProc.h" />
+    <ClInclude Include="..\..\src\V3PreShell.h" />
+    <ClInclude Include="..\..\src\V3Scope.h" />
+    <ClInclude Include="..\..\src\V3SenTree.h" />
+    <ClInclude Include="..\..\src\V3Simulate.h" />
+    <ClInclude Include="..\..\src\V3Slice.h" />
+    <ClInclude Include="..\..\src\V3Split.h" />
+    <ClInclude Include="..\..\src\V3SplitAs.h" />
+    <ClInclude Include="..\..\src\V3Stats.h" />
+    <ClInclude Include="..\..\src\V3String.h" />
+    <ClInclude Include="..\..\src\V3Subst.h" />
+    <ClInclude Include="..\..\src\V3SymTable.h" />
+    <ClInclude Include="..\..\src\V3Table.h" />
+    <ClInclude Include="..\..\src\V3Task.h" />
+    <ClInclude Include="..\..\src\V3Trace.h" />
+    <ClInclude Include="..\..\src\V3TraceDecl.h" />
+    <ClInclude Include="..\..\src\V3Tristate.h" />
+    <ClInclude Include="..\..\src\V3Undriven.h" />
+    <ClInclude Include="..\..\src\V3Unknown.h" />
+    <ClInclude Include="..\..\src\V3Unroll.h" />
+    <ClInclude Include="..\..\src\V3Width.h" />
+    <ClInclude Include="..\..\src\V3WidthCommit.h" />
+    <ClInclude Include="..\..\src\VlcBucket.h" />
+    <ClInclude Include="..\..\src\VlcOptions.h" />
+    <ClInclude Include="..\..\src\VlcPoint.h" />
+    <ClInclude Include="..\..\src\VlcSource.h" />
+    <ClInclude Include="..\..\src\VlcTest.h" />
+    <ClInclude Include="..\..\src\VlcTop.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\V3Active.cpp" />
+    <ClCompile Include="..\..\src\V3ActiveTop.cpp" />
+    <ClCompile Include="..\..\src\V3Assert.cpp" />
+    <ClCompile Include="..\..\src\V3AssertPre.cpp" />
+    <ClCompile Include="..\..\src\V3Ast.cpp" />
+    <ClCompile Include="..\..\src\V3AstNodes.cpp" />
+    <ClCompile Include="..\..\src\V3Begin.cpp" />
+    <ClCompile Include="..\..\src\V3Branch.cpp" />
+    <ClCompile Include="..\..\src\V3Broken.cpp" />
+    <ClCompile Include="..\..\src\V3Case.cpp" />
+    <ClCompile Include="..\..\src\V3Cast.cpp" />
+    <ClCompile Include="..\..\src\V3CCtors.cpp" />
+    <ClCompile Include="..\..\src\V3Cdc.cpp" />
+    <ClCompile Include="..\..\src\V3Changed.cpp" />
+    <ClCompile Include="..\..\src\V3Clean.cpp" />
+    <ClCompile Include="..\..\src\V3ClkGater.cpp" />
+    <ClCompile Include="..\..\src\V3Clock.cpp" />
+    <ClCompile Include="..\..\src\V3Combine.cpp" />
+    <ClCompile Include="..\..\src\V3Config.cpp" />
+    <ClCompile Include="..\..\src\V3Const__gen.cpp" />
+    <ClCompile Include="..\..\src\V3Coverage.cpp" />
+    <ClCompile Include="..\..\src\V3CoverageJoin.cpp" />
+    <ClCompile Include="..\..\src\V3Dead.cpp" />
+    <ClCompile Include="..\..\src\V3Delayed.cpp" />
+    <ClCompile Include="..\..\src\V3Depth.cpp" />
+    <ClCompile Include="..\..\src\V3DepthBlock.cpp" />
+    <ClCompile Include="..\..\src\V3Descope.cpp" />
+    <ClCompile Include="..\..\src\V3EmitC.cpp" />
+    <ClCompile Include="..\..\src\V3EmitCInlines.cpp" />
+    <ClCompile Include="..\..\src\V3EmitCSyms.cpp" />
+    <ClCompile Include="..\..\src\V3EmitMk.cpp" />
+    <ClCompile Include="..\..\src\V3EmitV.cpp" />
+    <ClCompile Include="..\..\src\V3EmitXml.cpp" />
+    <ClCompile Include="..\..\src\V3Error.cpp" />
+    <ClCompile Include="..\..\src\V3Expand.cpp" />
+    <ClCompile Include="..\..\src\V3File.cpp" />
+    <ClCompile Include="..\..\src\V3FileLine.cpp" />
+    <ClCompile Include="..\..\src\V3Gate.cpp" />
+    <ClCompile Include="..\..\src\V3GenClk.cpp" />
+    <ClCompile Include="..\..\src\V3Graph.cpp" />
+    <ClCompile Include="..\..\src\V3GraphAcyc.cpp" />
+    <ClCompile Include="..\..\src\V3GraphAlg.cpp" />
+    <ClCompile Include="..\..\src\V3GraphDfa.cpp" />
+    <ClCompile Include="..\..\src\V3GraphTest.cpp" />
+    <ClCompile Include="..\..\src\V3Hashed.cpp" />
+    <ClCompile Include="..\..\src\V3Inline.cpp" />
+    <ClCompile Include="..\..\src\V3Inst.cpp" />
+    <ClCompile Include="..\..\src\V3Life.cpp" />
+    <ClCompile Include="..\..\src\V3LifePost.cpp" />
+    <ClCompile Include="..\..\src\V3LinkCells.cpp" />
+    <ClCompile Include="..\..\src\V3LinkDot.cpp" />
+    <ClCompile Include="..\..\src\V3LinkJump.cpp" />
+    <ClCompile Include="..\..\src\V3LinkLevel.cpp" />
+    <ClCompile Include="..\..\src\V3LinkLValue.cpp" />
+    <ClCompile Include="..\..\src\V3LinkParse.cpp" />
+    <ClCompile Include="..\..\src\V3LinkResolve.cpp" />
+    <ClCompile Include="..\..\src\V3Localize.cpp" />
+    <ClCompile Include="..\..\src\V3Name.cpp" />
+    <ClCompile Include="..\..\src\V3Number.cpp" />
+    <ClCompile Include="..\..\src\V3Options.cpp" />
+    <ClCompile Include="..\..\src\V3Order.cpp" />
+    <ClCompile Include="..\..\src\V3Os.cpp" />
+    <ClCompile Include="..\..\src\V3Param.cpp" />
+    <ClCompile Include="..\..\src\V3ParseGrammar.cpp" />
+    <ClCompile Include="..\..\src\V3ParseImp.cpp" />
+    <ClCompile Include="..\..\src\V3ParseLex.cpp" />
+    <ClCompile Include="..\..\src\V3Premit.cpp" />
+    <ClCompile Include="..\..\src\V3PreProc.cpp" />
+    <ClCompile Include="..\..\src\V3PreShell.cpp" />
+    <ClCompile Include="..\..\src\V3Scope.cpp" />
+    <ClCompile Include="..\..\src\V3Slice.cpp" />
+    <ClCompile Include="..\..\src\V3Split.cpp" />
+    <ClCompile Include="..\..\src\V3SplitAs.cpp" />
+    <ClCompile Include="..\..\src\V3Stats.cpp" />
+    <ClCompile Include="..\..\src\V3StatsReport.cpp" />
+    <ClCompile Include="..\..\src\V3String.cpp" />
+    <ClCompile Include="..\..\src\V3Subst.cpp" />
+    <ClCompile Include="..\..\src\V3Table.cpp" />
+    <ClCompile Include="..\..\src\V3Task.cpp" />
+    <ClCompile Include="..\..\src\V3Trace.cpp" />
+    <ClCompile Include="..\..\src\V3TraceDecl.cpp" />
+    <ClCompile Include="..\..\src\V3Tristate.cpp" />
+    <ClCompile Include="..\..\src\V3Undriven.cpp" />
+    <ClCompile Include="..\..\src\V3Unknown.cpp" />
+    <ClCompile Include="..\..\src\V3Unroll.cpp" />
+    <ClCompile Include="..\..\src\V3Width.cpp" />
+    <ClCompile Include="..\..\src\V3WidthSel.cpp" />
+    <ClCompile Include="..\..\src\Verilator.cpp" />
+    <ClCompile Include="..\..\src\VlcTop.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
