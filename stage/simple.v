@@ -4,11 +4,5 @@ input a;
 input b;
 output c;
 
-logic d;
-
-always @(posedge clk) begin: update_c
-c <= d;
-end
-
-assign d = a & b;
+alu alu_1(.clk(clk),.a(a),.b(b),.c(c));
 endmodule

@@ -542,7 +542,7 @@ void process () {
 int main(int argc, char** argv, char** env) {
     // General initialization
     ios::sync_with_stdio();
-
+    V3Error::debugDefault(20);
     time_t randseed;
     time(&randseed);
     srand( (int) randseed);
