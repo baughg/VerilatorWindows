@@ -1680,7 +1680,7 @@ void EmitCImp::emitTextSection(AstType type) {
 		    if (last_line < 0) {
 			puts("\n//*** Below code from `systemc in Verilog file\n");
 		    }
-		    ofp()->putsNoTracking("//#line "+cvtToStr(nodep->fileline()->lineno())
+		    ofp()->putsNoTracking("////#line "+cvtToStr(nodep->fileline()->lineno())
 					  +" ");
 		    ofp()->putsQuoted(nodep->fileline()->filename());
 		    ofp()->putsNoTracking("\n");
