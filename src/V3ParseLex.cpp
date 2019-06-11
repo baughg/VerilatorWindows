@@ -34,7 +34,7 @@
 // Build in LEX script
 
 #define yyFlexLexer V3LexerBase
-#include "V3Lexer.yy.h"
+#include "V3Lexer.yy.cpp"
 #undef yyFlexLexer
 
 //######################################################################
