@@ -220,6 +220,7 @@
     <ClInclude Include="..\..\src\V3ParseImp.h" />
     <ClInclude Include="..\..\src\V3ParseSym.h" />
     <ClInclude Include="..\..\src\V3PreLex.h" />
+    <ClInclude Include="..\..\src\V3PreLex.yy.h" />
     <ClInclude Include="..\..\src\V3Premit.h" />
     <ClInclude Include="..\..\src\V3PreProc.h" />
     <ClInclude Include="..\..\src\V3PreShell.h" />
