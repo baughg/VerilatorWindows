@@ -102,7 +102,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>YYDEBUG;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Movidius\development\verilator\include;C:\Movidius\development\winflexbison\bin\Release</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Movidius\development\verilator\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -197,6 +197,7 @@
     <ClInclude Include="..\..\src\V3Inst.h" />
     <ClInclude Include="..\..\src\V3LangCode.h" />
     <ClInclude Include="..\..\src\V3LanguageWords.h" />
+    <ClInclude Include="..\..\src\V3Lexer.yy.h" />
     <ClInclude Include="..\..\src\V3Life.h" />
     <ClInclude Include="..\..\src\V3LifePost.h" />
     <ClInclude Include="..\..\src\V3LinkCells.h" />
