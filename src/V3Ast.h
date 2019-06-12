@@ -2031,7 +2031,9 @@ public:
 	,m_name(name), m_origName(name)
 	,m_modPublic(false), m_modTrace(false), m_inLibrary(false), m_dead(false)
 	,m_internal(false), m_recursive(false), m_recursiveClone(false)
-	,m_level(0), m_varNum(0), m_typeNum(0) { }
+	,m_level(0), m_varNum(0), m_typeNum(0) { 
+        m_modTrace = false;
+    }
     ASTNODE_BASE_FUNCS(NodeModule)
     virtual void dump(ostream& str);
     virtual bool maybePointedTo() const { return true; }
