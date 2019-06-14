@@ -293,6 +293,10 @@ private:
 		    modp->unlinkFrBack()->deleteTree(); VL_DANGLING(modp);
 		    retry = true;
 		}
+		else if(modp)
+		{
+			printf("Module: %s\n", modp->name().c_str());
+		}
 	    }
 	}
     }

@@ -603,6 +603,15 @@ int main(int argc, char** argv, char** env) {
     // Link, etc, if needed
     if (!v3Global.opt.preprocOnly()) {
 	process();
+	std::ofstream dumpFile("mydump.dot");
+	v3Global.rootp()->dump(dumpFile);
+	/*AstNodeModule* nextmodp;
+	for (AstNodeModule* modp = v3Global.rootp()->modulesp(); modp; modp = nextmodp) {
+		nextmodp = modp->nextp()->castNodeModule();
+
+		printf("Module: %s\n", nextmodp->name().c_str());
+	}*/
+	dumpFile.close();
     }
 
     // Final steps

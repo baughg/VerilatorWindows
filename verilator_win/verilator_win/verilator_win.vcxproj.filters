@@ -318,6 +318,9 @@
     <ClInclude Include="..\..\include\config_build.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\src\V3ParseBison.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\V3Active.cpp">

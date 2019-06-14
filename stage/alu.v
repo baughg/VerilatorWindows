@@ -9,6 +9,5 @@ logic d;
 always @(posedge clk) begin: update_c
 c <= d;
 end
-
 assign d = a | b;
 endmodule

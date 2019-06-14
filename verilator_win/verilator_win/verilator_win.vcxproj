@@ -216,6 +216,7 @@
     <ClInclude Include="..\..\src\V3Os.h" />
     <ClInclude Include="..\..\src\V3Param.h" />
     <ClInclude Include="..\..\src\V3Parse.h" />
+    <ClInclude Include="..\..\src\V3ParseBison.h" />
     <ClInclude Include="..\..\src\V3ParseImp.h" />
     <ClInclude Include="..\..\src\V3ParseSym.h" />
     <ClInclude Include="..\..\src\V3PreLex.h" />
