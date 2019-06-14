@@ -187,3 +187,4 @@ void V3Parse::parseFile(FileLine* fileline, const string& modname, bool inLibrar
 void V3Parse::ppPushText(V3ParseImp* impp, const string& text) {
     if (text != "") impp->ppPushText(text);
 }
+

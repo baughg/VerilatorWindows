@@ -318,7 +318,10 @@
     <ClInclude Include="..\..\include\config_build.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\src\V3ParseBison.h">
+    <ClInclude Include="..\..\src\V3Lexer.yy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\V3PreLex.yy.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

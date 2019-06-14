@@ -664,7 +664,7 @@ int yylineno = 1;
 
 extern char *yytext;
 #ifdef yytext_ptr
-#undef yytext_ptr
+//flexfix: #undef yytext_ptr
 #endif
 #define yytext_ptr yytext
 
@@ -1378,7 +1378,7 @@ static int input ( void );
 		{ \
 		int c = '*'; \
 		int n; \
-		for ( n = 0; n < max_size && \
+		for ( n = 0; ((size_t)n < (size_t)max_size) && \
 			     (c = getc( yyin )) != EOF && c != '\n'; ++n ) \
 			buf[n] = (char) c; \
 		if ( c == '\n' ) \
@@ -2552,7 +2552,7 @@ static int yy_get_next_buffer (void)
 
 	if ( (yy_n_chars) == 0 )
 		{
-		if ( number_to_move == YY_MORE_ADJ )
+		if ( (int)number_to_move == (int)YY_MORE_ADJ )
 			{
 			ret_val = EOB_ACT_END_OF_FILE;
 			yyrestart( yyin  );
@@ -3193,7 +3193,7 @@ YY_BUFFER_STATE yy_scan_bytes  (const char * yybytes, int  _yybytes_len )
 	if ( ! buf )
 		YY_FATAL_ERROR( "out of dynamic memory in yy_scan_bytes()" );
 
-	for ( i = 0; i < _yybytes_len; ++i )
+	for ( i = 0; (yy_size_t)(i) < (yy_size_t)(_yybytes_len); ++i )
 		buf[i] = yybytes[i];
 
 	buf[_yybytes_len] = buf[_yybytes_len+1] = YY_END_OF_BUFFER_CHAR;

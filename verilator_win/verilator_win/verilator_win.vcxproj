@@ -197,6 +197,7 @@
     <ClInclude Include="..\..\src\V3Inst.h" />
     <ClInclude Include="..\..\src\V3LangCode.h" />
     <ClInclude Include="..\..\src\V3LanguageWords.h" />
+    <ClInclude Include="..\..\src\V3Lexer.yy.h" />
     <ClInclude Include="..\..\src\V3Life.h" />
     <ClInclude Include="..\..\src\V3LifePost.h" />
     <ClInclude Include="..\..\src\V3LinkCells.h" />
@@ -220,6 +221,7 @@
     <ClInclude Include="..\..\src\V3ParseImp.h" />
     <ClInclude Include="..\..\src\V3ParseSym.h" />
     <ClInclude Include="..\..\src\V3PreLex.h" />
+    <ClInclude Include="..\..\src\V3PreLex.yy.h" />
     <ClInclude Include="..\..\src\V3Premit.h" />
     <ClInclude Include="..\..\src\V3PreProc.h" />
     <ClInclude Include="..\..\src\V3PreShell.h" />
