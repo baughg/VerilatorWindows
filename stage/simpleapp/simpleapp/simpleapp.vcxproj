@@ -23,7 +23,7 @@
     <ProjectGuid>{BBF82F79-66DB-462D-B202-6C1A990FE13A}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>simpleapp</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -91,7 +91,7 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(VERILATOR_LIB_BUILD)\include;C:\Movidius\development\verilator\stage\obj_dir</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(VERILATOR_SRC)\include;..\..\obj_dir</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -152,7 +152,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\keembay\verilator\include\verilated.cpp" />
+    <ClCompile Include="..\..\..\include\verilated.cpp" />
     <ClCompile Include="..\..\obj_dir\Vsimple.cpp" />
     <ClCompile Include="..\..\obj_dir\Vsimple__Syms.cpp" />
     <ClCompile Include="simpleapp.cpp" />

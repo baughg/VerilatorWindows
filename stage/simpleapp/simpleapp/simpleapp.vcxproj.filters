@@ -24,7 +24,7 @@
     <ClCompile Include="..\..\obj_dir\Vsimple__Syms.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\keembay\verilator\include\verilated.cpp">
+    <ClCompile Include="..\..\..\include\verilated.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
